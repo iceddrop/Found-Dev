@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+    transition: background 0.2s linear; 
+}
+.light{
+    background-color: #E2DFD2;
+    color:black;
+}
+.light .title{
+    color:black;
+}
+.app-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 280px;
+}
+.top{
+    display:flex;
+    justify-content: space-between;
+}
+.title{
+    color:hsl(193, 38%, 86%);
+    font-family: Space Mono;
+}
+.theme-toggle{
+    
+    margin-top:10px;
+    cursor:pointer;
+}
+.label{
+    position:relative;
+    background-color: #111;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding :5px;
+    height:26px;
+    width:45px;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.checkbox{
+    opacity:0;
+    position:absolute;
+}
+.checkbox:checked + .label .ball{
+    transform : translateX(20px);
+}
+.ball{
+    position:absolute;
+    top:3px;
+    left:3px;
+    width:19px;
+    height:19px;
+    background-color:white;
+    border-radius:50%;
+    transition: transform 0.2s linear;
+}
+.fa-sun{
+    background-color: #111;
+    color:#f39c12;
+    font-size: 0.8rem;
+    border-radius:50%;
+}
+.fa-moon{
+    background-color: #111;
+    color:#f1c40f;
+    font-size: 0.8rem;
+}
+.search-container{
+    margin-top: 25px;
+    display:flex;
+    justify-content: space-around;
+    background-color: hsl(217, 19%, 24%);
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+.light .search-container{
+    background-color:hsl(235, 41%, 25%); 
+}
+.fa-magnifying-glass{
+    background-color: hsl(217, 19%, 24%);
+    color:hsl(219, 91%, 52%);
+    align-self: center;
+}
+.light .fa-magnifying-glass{
+    background-color:hsl(235, 41%, 25%); 
+}
+.search-box{
+    border:none;
+    background-color: hsl(217, 19%, 24%);
+    color: white !important;
+    font-family: Space Mono;
+    font-weight: 400;
+    
+}
+.light .search-box{
+    background-color:hsl(235, 41%, 25%); 
+}
+.search-box:focus {
+    outline: transparent;
+  }
+.btn-1{
+    border: none;
+    color:hsl(193, 38%, 86%) ;
+    background-color:hsl(219, 91%, 52%);
+    font-family: Space Mono;
+    padding:15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.github-profile-body{
+    position:relative;
+    top:15px;
+    padding:15px;
+    width: 260px;
+    height:355px;
+    border-radius:5px;
+    background-color: hsl(217, 19%, 24%)!important;
+}
+.light .github-profile-body{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+.profile-img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background-color: hsl(217, 19%, 24%)!important;
+    border-radius:50%;
+}
+.light .profile-img{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+.flex-profile-1{
+    display: flex;
+    background-color: hsl(217, 19%, 24%)!important;
+}
+.light .flex-profile-1{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+.flex-profile-2{
+    align-self: center;
+    margin-left:30px;
+}
+.light .flex-profile-2{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+.flex-profile-2, .username, .handle, .date{
+    background-color: hsl(217, 19%, 24%)!important;
+}
+.username{
+    font-family: Space Mono;
+    color:hsl(193, 38%, 86%) ;
+    font-size: 0.9rem;
+}
+.light .username{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+
+.date{
+    font-family: Space Mono;
+    color:hsl(193, 38%, 86%);
+    font-size:0.6rem;
+    margin-top:7px;
+}
+.light .date{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+.bio{
+    position:relative;
+    top:10px;
+    font-family: Space Mono;
+    color:hsl(193, 38%, 86%);
+    font-size:0.8rem;
+    margin-top:7px;
+    background-color: hsl(217, 19%, 24%)!important;
+}
+.light .bio{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+.profile-stats{
+    position: relative;
+    top:35px;
+    display:flex;
+    padding:20px;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.repo, .followers, .followings{
+    font-family: Space Mono;
+    color:hsl(193, 38%, 86%);
+    font-size:0.7rem;  
+}
+.stat-no{
+    font-family: Space Mono;
+    color:hsl(193, 38%, 86%);
+    text-align:center;
+    margin-top:5px;
+}
+
+.btn-2{
+    color:hsl(193, 38%, 86%);
+    font-family: Space Mono;
+    margin-top:50px;
+    text-decoration:none;
+    background-color: hsl(219, 91%, 52%);
+    font-size: 0.9rem;
+    padding:10px;
+    border-radius:5px;
+}
+.btn-div{
+    position:relative;
+    top:65px;
+    text-align:center;
+    background-color: hsl(217, 19%, 24%);
+    cursor:pointer;
+}
+.light .btn-div{
+    background-color:hsl(235, 41%, 25%)!important; 
+}
+@media only screen and (min-width:768px) and (max-width:2000px){
+    .app-body{
+        width:350px;
+    }
+    .btn-1{
+        margin-left:45px!important;
+    }
+    .github-profile-body{
+        width:330px;
+    }
+
+}

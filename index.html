@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Found Dev</title>
+    <link href="index.css" rel="stylesheet">
+
+    
+</head>
+<body id="body">
+    <div class="app-body">
+        <div class="top">                
+            <h3 class="title">Found Dev</h3>
+            <div class="theme-toggle">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="ball"></div>
+               </label>     
+            </div>
+        </div>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-box" id="input-box"  type="text" name="username" placeholder="Github username...">
+            <button class="btn-1" onclick="display()">Search</button>
+        </div>
+        <div class="github-profile-body">
+            <div class="flex-profile-1">
+                <img src="images/Octocat.png" id="profile-img" class="profile-img" alt="profile-img">
+                <div class="flex-profile-2">
+                    <h3 class="username" id="username">username</h3>
+                    <p class="date" id="date">Date joined</p>
+                </div>  
+            </div>
+            <p class="bio" id="bio">lorem ipsum dolor maste. fulluci carbo mache, semi fidle botesk or viglante.</p> 
+            <div class="profile-stats">
+                <div class="repo-stat">
+                    <h6 class="repo">Repos</h6>
+                    <p class="stat-no" id="repos">0</p>
+                </div>
+                <div class="following-stat">
+                    <h6 class="followings">Following</h6>
+                    <p class="stat-no" id="followings">0</p>
+                </div>
+                <div class="followers-stat">
+                    <h6 class="followers">Followers</h6>
+                    <p class="stat-no" id="followers">0</p>
+                </div>
+            </div>  
+            <div class="btn-div" id="btn-div">
+              <a href="#" class="btn-2" id="btn-2">Visit Profile</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/937b1ed33b.js" crossorigin="anonymous"></script>
+</body>
+</html>
