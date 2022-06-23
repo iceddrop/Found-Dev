@@ -1,5 +1,5 @@
 # Found-Dev
-A straightforward web application that accesses the user's GitHub profile page as well as their user profile information from the GitHub API.
+A straightforward web application that can access  a GitHub users' profile page as well as display their profile information from the GitHub API.
 
 ![found dev light 2](https://user-images.githubusercontent.com/93996532/175357093-26e13c32-ba6f-4f7f-90f7-30e2199936f2.png)
 
