@@ -5,15 +5,19 @@ const displayUserInfo = (data) => {
     
     const {name, bio, created_at, public_repos, followers, following, avatar_url, html_url} = data;
 
+    const event = new Date(created_at);
+    const dateReleased = event.toString().slice(0,16)
+
     document.getElementById('username').innerHTML = name;
     document.getElementById('bio').innerHTML = bio;
     document.getElementById('repos').innerHTML = public_repos;
     document.getElementById('followings').innerHTML = following;
     document.getElementById('followers').innerHTML = followers;
-    document.getElementById('date').innerHTML = created_at;
+    document.getElementById('date').innerHTML = 'Joined:  ' + dateReleased;
     document.getElementById("profile-img").src = avatar_url;
     document.getElementById('btn-2').href = html_url;
   };
+
 
 const getUserData = () => {
     let userInputValue = document.getElementById('input-box').value;

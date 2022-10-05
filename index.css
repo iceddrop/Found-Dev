@@ -185,6 +185,7 @@ body{
     font-size:0.8rem;
     margin-top:7px;
     background-color: hsl(217, 19%, 24%)!important;
+    min-height:50px;
 }
 .light .bio{
     background-color:hsl(235, 41%, 25%)!important; 
